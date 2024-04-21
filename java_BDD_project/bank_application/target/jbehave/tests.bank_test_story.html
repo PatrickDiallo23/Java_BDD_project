@@ -1,0 +1,526 @@
+<div id="15f3756f-fc7f-4b32-96d6-e53c4d9c762b" class="story">
+<h1></h1>
+<div class="path">tests/bank_test_story.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> manage credit offers efficiently</div>
+<div class="element asA"><span class="keyword asA">As a</span> bank operator</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> perform various operations on different types of credit offers and customers
+
+!-- task 6</div>
+</div>
+<div class="beforeSystemStorySteps">
+</div>
+<div class="beforeUserStorySteps">
+</div>
+<div id="8ac3dc16-cd04-4431-9a5f-e16f50b98875" class="scenario">
+<h2>Scenario: Adding usual customer to economy offer</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given an economy credit offer with ID <span class="step parameter">&quot;1&quot;</span></div>
+<div class="step successful">And a usual customer named <span class="step parameter">&quot;John&quot;</span></div>
+<div class="step successful">When the usual customer is added to the economy offer</div>
+<div class="step successful">Then the usual customer should be added successfully</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790659</h3>
+<h3>end 1713180790720</h3>
+</div>
+<div id="069df457-87e9-402e-8d78-c67bd5ffd53b" class="scenario">
+<h2>Scenario: Removing usual customer from economy offer</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given an economy credit offer with ID <span class="step parameter">&quot;2&quot;</span></div>
+<div class="step successful">And a usual customer with name <span class="step parameter">&quot;John&quot;</span> added to the economy offer</div>
+<div class="step successful">When the usual customer is removed from the economy offer</div>
+<div class="step successful">Then the usual customer should be removed successfully</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790724</h3>
+<h3>end 1713180790743</h3>
+</div>
+<div id="55377587-7a6e-4d89-b524-73892155c026" class="scenario">
+<h2>Scenario: Adding VIP customer to economy offer</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given an economy credit offer with ID <span class="step parameter">&quot;3&quot;</span></div>
+<div class="step successful">And a VIP customer named <span class="step parameter">&quot;Alice&quot;</span></div>
+<div class="step successful">When the VIP customer is added to the economy offer</div>
+<div class="step successful">Then the VIP customer should be added successfully</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790745</h3>
+<h3>end 1713180790760</h3>
+</div>
+<div id="4ba1de8a-b048-47a2-8bbb-65412f419128" class="scenario">
+<h2>Scenario: Removing VIP customer from economy offer</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given an economy credit offer with ID <span class="step parameter">&quot;4&quot;</span></div>
+<div class="step successful">And a VIP customer with name <span class="step parameter">&quot;Emma&quot;</span> added to the economy offer</div>
+<div class="step successful">When the VIP customer is removed from the economy offer</div>
+<div class="step successful">Then the VIP customer should not be removed</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790762</h3>
+<h3>end 1713180790774</h3>
+</div>
+<div id="656e803f-f68d-4abf-936e-58aa07c2a524" class="scenario">
+<h2>Scenario: Not adding usual customer to business offer</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given a business credit offer with ID <span class="step parameter">&quot;5&quot;</span></div>
+<div class="step successful">And a usual customer named <span class="step parameter">&quot;Mike&quot;</span></div>
+<div class="step successful">When the usual customer is added to the business offer</div>
+<div class="step successful">Then the usual customer should not be added</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790776</h3>
+<h3>end 1713180790791</h3>
+</div>
+<div id="7f5dac20-7cb0-49e0-a61b-10d9712069da" class="scenario">
+<h2>Scenario: Not removing usual customer from any offer</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given a business credit offer with ID <span class="step parameter">&quot;6&quot;</span></div>
+<div class="step successful">And a usual customer named <span class="step parameter">&quot;Kate&quot;</span></div>
+<div class="step successful">When the usual customer is removed from any offer</div>
+<div class="step successful">Then the usual customer should not be removed</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790792</h3>
+<h3>end 1713180790803</h3>
+</div>
+<div id="521a2f68-42e6-4403-b3f3-d744a648b9d0" class="scenario">
+<h2>Scenario: Adding VIP customer to business offer</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given a business credit offer with ID <span class="step parameter">&quot;7&quot;</span></div>
+<div class="step successful">And a VIP customer named <span class="step parameter">&quot;Tom&quot;</span></div>
+<div class="step successful">When the VIP customer is added to the business offer</div>
+<div class="step successful">Then the VIP customer should be added successfully</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790804</h3>
+<h3>end 1713180790813</h3>
+</div>
+<div id="2d72abe1-9490-4bba-a242-98b3b6cf85d9" class="scenario">
+<h2>Scenario: Not removing VIP customer from any offer</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given a business credit offer with ID <span class="step parameter">&quot;8&quot;</span></div>
+<div class="step successful">And a VIP customer named <span class="step parameter">&quot;Emma&quot;</span></div>
+<div class="step successful">When the VIP customer is removed from any offer</div>
+<div class="step successful">Then the VIP customer should not be removed</div>
+<div class="comment">!-- task 7</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790814</h3>
+<h3>end 1713180790831</h3>
+</div>
+<div id="fecc5f3a-e9d2-442d-9706-d92c0963c756" class="scenario">
+<h2>Scenario: Adding usual customer to premium offer</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given a premium credit offer with ID <span class="step parameter">&quot;9&quot;</span></div>
+<div class="step successful">And a usual customer named <span class="step parameter">&quot;David&quot;</span></div>
+<div class="step successful">When the usual customer is added to the premium offer</div>
+<div class="step successful">Then the usual customer should not be added</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790832</h3>
+<h3>end 1713180790847</h3>
+</div>
+<div id="b904b105-4125-40ac-9115-bc16098745c1" class="scenario">
+<h2>Scenario: Adding VIP customer to premium offer</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given a premium credit offer with ID <span class="step parameter">&quot;10&quot;</span></div>
+<div class="step successful">And a VIP customer named <span class="step parameter">&quot;Sophia&quot;</span></div>
+<div class="step successful">When the VIP customer is added to the premium offer</div>
+<div class="step successful">Then the VIP customer should be added successfully</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790848</h3>
+<h3>end 1713180790859</h3>
+</div>
+<div id="80850636-2ae3-4fb5-9afd-0687dab6ad37" class="scenario">
+<h2>Scenario: Removing customer from premium offer</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given a premium credit offer with ID <span class="step parameter">&quot;11&quot;</span></div>
+<div class="step successful">And a <span class="step parameter">customer</span> named <span class="step parameter">&quot;Anna&quot;</span> added to the premium offer</div>
+<div class="step successful">When the customer is removed from the premium offer</div>
+<div class="step successful">Then the customer should be removed successfully</div>
+<div class="comment">!-- task 8</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790860</h3>
+<h3>end 1713180790873</h3>
+</div>
+<div id="e2ebdd8c-0936-4cd4-9b7d-ffa04ba2d2cb" class="scenario">
+<h2>Scenario: Adding the same customer to an offer again</h2>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given a <span class="step parameter">economy</span> credit offer type with ID <span class="step parameter">&quot;12&quot;</span></div>
+<div class="step successful">And a customer named <span class="step parameter">Maria</span> added to the credit offer</div>
+<div class="step successful">When the same customer is added to the credit offer again</div>
+<div class="step successful">Then the customer should not be added again</div>
+<div class="comment">!-- task 9</div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+<h3>start 1713180790874</h3>
+<h3>end 1713180790885</h3>
+</div>
+<div id="349d5d8c-2d61-472e-b126-36833289eda2" class="scenario">
+<h2>Scenario: Calculate bonus points for customers applying for an economy credit offer</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given An economy credit offer with ID &lt;offer_id&gt; and credit amount &lt;credit_amount&gt;</div>
+<div class="step">And A &lt;customer_type&gt; named &lt;customer_name&gt;</div>
+<div class="step">When The bonus points are calculated for the customer for economy offer</div>
+<div class="step">Then The bonus points should be &lt;expected_bonus_points&gt;</div>
+<table>
+<thead>
+<tr>
+<th>offer_id</th><th>credit_amount</th><th>customer_type</th><th>customer_name</th><th>expected_bonus_points</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>&quot;1&quot;</td><td>1000.0</td><td>VIP</td><td>&quot;Alice&quot;</td><td>100</td></tr>
+<tr>
+<td>&quot;2&quot;</td><td>2000.0</td><td>usual</td><td>&quot;John&quot;</td><td>100</td></tr>
+<tr>
+<td>&quot;3&quot;</td><td>500.0</td><td>VIP</td><td>&quot;Bob&quot;</td><td>50</td></tr>
+<tr>
+<td>&quot;4&quot;</td><td>3000.0</td><td>usual</td><td>&quot;Emma&quot;</td><td>150</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {credit_amount=1000.0, customer_type=VIP, customer_name=&quot;Alice&quot;, expected_bonus_points=100, offer_id=&quot;1&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given An economy credit offer with ID <span class="step parameter">&quot;1&quot;</span> and credit amount <span class="step parameter">1000.0</span></div>
+<div class="step successful">And A <span class="step parameter">VIP</span> named <span class="step parameter">&quot;Alice&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for economy offer</div>
+<div class="step successful">Then The bonus points should be <span class="step parameter">100</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+
+<h3 class="example">Example: {credit_amount=2000.0, customer_type=usual, customer_name=&quot;John&quot;, expected_bonus_points=100, offer_id=&quot;2&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given An economy credit offer with ID <span class="step parameter">&quot;2&quot;</span> and credit amount <span class="step parameter">2000.0</span></div>
+<div class="step successful">And A <span class="step parameter">usual</span> named <span class="step parameter">&quot;John&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for economy offer</div>
+<div class="step successful">Then The bonus points should be <span class="step parameter">100</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+
+<h3 class="example">Example: {credit_amount=500.0, customer_type=VIP, customer_name=&quot;Bob&quot;, expected_bonus_points=50, offer_id=&quot;3&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given An economy credit offer with ID <span class="step parameter">&quot;3&quot;</span> and credit amount <span class="step parameter">500.0</span></div>
+<div class="step successful">And A <span class="step parameter">VIP</span> named <span class="step parameter">&quot;Bob&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for economy offer</div>
+<div class="step successful">Then The bonus points should be <span class="step parameter">50</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+
+<h3 class="example">Example: {credit_amount=3000.0, customer_type=usual, customer_name=&quot;Emma&quot;, expected_bonus_points=150, offer_id=&quot;4&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given An economy credit offer with ID <span class="step parameter">&quot;4&quot;</span> and credit amount <span class="step parameter">3000.0</span></div>
+<div class="step successful">And A <span class="step parameter">usual</span> named <span class="step parameter">&quot;Emma&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for economy offer</div>
+<div class="step successful">Then The bonus points should be <span class="step parameter">150</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+</div>
+<h3>start 1713180790886</h3>
+<h3>end 1713180790958</h3>
+</div>
+<div id="e7bbcb52-2638-410a-8722-58062aacfd49" class="scenario">
+<h2>Scenario: Calculate bonus points for customers applying for a business credit offer</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given A business credit offer with ID &lt;offer_id&gt; and credit amount &lt;credit_amount&gt;</div>
+<div class="step">And A &lt;customer_type&gt; named &lt;customer_name&gt;</div>
+<div class="step">When The bonus points are calculated for the customer for business offer</div>
+<div class="step">Then The bonus points for business offer should be &lt;expected_bonus_points&gt;</div>
+<table>
+<thead>
+<tr>
+<th>offer_id</th><th>credit_amount</th><th>customer_type</th><th>customer_name</th><th>expected_bonus_points</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>&quot;1&quot;</td><td>1000.0</td><td>VIP</td><td>&quot;Alice&quot;</td><td>150</td></tr>
+<tr>
+<td>&quot;2&quot;</td><td>2000.0</td><td>usual</td><td>&quot;John&quot;</td><td>140</td></tr>
+<tr>
+<td>&quot;3&quot;</td><td>500.0</td><td>VIP</td><td>&quot;Bob&quot;</td><td>75</td></tr>
+<tr>
+<td>&quot;4&quot;</td><td>3000.0</td><td>usual</td><td>&quot;Emma&quot;</td><td>210</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {credit_amount=1000.0, customer_type=VIP, customer_name=&quot;Alice&quot;, expected_bonus_points=150, offer_id=&quot;1&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given A business credit offer with ID <span class="step parameter">&quot;1&quot;</span> and credit amount <span class="step parameter">1000.0</span></div>
+<div class="step successful">And A <span class="step parameter">VIP</span> named <span class="step parameter">&quot;Alice&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for business offer</div>
+<div class="step successful">Then The bonus points for business offer should be <span class="step parameter">150</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+
+<h3 class="example">Example: {credit_amount=2000.0, customer_type=usual, customer_name=&quot;John&quot;, expected_bonus_points=140, offer_id=&quot;2&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given A business credit offer with ID <span class="step parameter">&quot;2&quot;</span> and credit amount <span class="step parameter">2000.0</span></div>
+<div class="step successful">And A <span class="step parameter">usual</span> named <span class="step parameter">&quot;John&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for business offer</div>
+<div class="step successful">Then The bonus points for business offer should be <span class="step parameter">140</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+
+<h3 class="example">Example: {credit_amount=500.0, customer_type=VIP, customer_name=&quot;Bob&quot;, expected_bonus_points=75, offer_id=&quot;3&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given A business credit offer with ID <span class="step parameter">&quot;3&quot;</span> and credit amount <span class="step parameter">500.0</span></div>
+<div class="step successful">And A <span class="step parameter">VIP</span> named <span class="step parameter">&quot;Bob&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for business offer</div>
+<div class="step successful">Then The bonus points for business offer should be <span class="step parameter">75</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+
+<h3 class="example">Example: {credit_amount=3000.0, customer_type=usual, customer_name=&quot;Emma&quot;, expected_bonus_points=210, offer_id=&quot;4&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given A business credit offer with ID <span class="step parameter">&quot;4&quot;</span> and credit amount <span class="step parameter">3000.0</span></div>
+<div class="step successful">And A <span class="step parameter">usual</span> named <span class="step parameter">&quot;Emma&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for business offer</div>
+<div class="step successful">Then The bonus points for business offer should be <span class="step parameter">210</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+</div>
+<h3>start 1713180790959</h3>
+<h3>end 1713180791010</h3>
+</div>
+<div id="c3bdd963-4c10-4d53-8f70-fde4bfb52020" class="scenario">
+<h2>Scenario: Calculate bonus points for customers applying for a premium credit offer</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given A premium credit offer with ID &lt;offer_id&gt; and credit amount &lt;credit_amount&gt;</div>
+<div class="step">And A &lt;customer_type&gt; named &lt;customer_name&gt;</div>
+<div class="step">When The bonus points are calculated for the customer for premium offer</div>
+<div class="step">Then The bonus points for premium offer should be &lt;expected_bonus_points&gt;</div>
+<table>
+<thead>
+<tr>
+<th>offer_id</th><th>credit_amount</th><th>customer_type</th><th>customer_name</th><th>expected_bonus_points</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>&quot;1&quot;</td><td>1000.0</td><td>VIP</td><td>&quot;Alice&quot;</td><td>200</td></tr>
+<tr>
+<td>&quot;2&quot;</td><td>2000.0</td><td>usual</td><td>&quot;John&quot;</td><td>200</td></tr>
+<tr>
+<td>&quot;3&quot;</td><td>500.0</td><td>VIP</td><td>&quot;Bob&quot;</td><td>100</td></tr>
+<tr>
+<td>&quot;4&quot;</td><td>3000.0</td><td>usual</td><td>&quot;Emma&quot;</td><td>300</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {credit_amount=1000.0, customer_type=VIP, customer_name=&quot;Alice&quot;, expected_bonus_points=200, offer_id=&quot;1&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given A premium credit offer with ID <span class="step parameter">&quot;1&quot;</span> and credit amount <span class="step parameter">1000.0</span></div>
+<div class="step successful">And A <span class="step parameter">VIP</span> named <span class="step parameter">&quot;Alice&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for premium offer</div>
+<div class="step successful">Then The bonus points for premium offer should be <span class="step parameter">200</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+
+<h3 class="example">Example: {credit_amount=2000.0, customer_type=usual, customer_name=&quot;John&quot;, expected_bonus_points=200, offer_id=&quot;2&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given A premium credit offer with ID <span class="step parameter">&quot;2&quot;</span> and credit amount <span class="step parameter">2000.0</span></div>
+<div class="step successful">And A <span class="step parameter">usual</span> named <span class="step parameter">&quot;John&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for premium offer</div>
+<div class="step successful">Then The bonus points for premium offer should be <span class="step parameter">200</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+
+<h3 class="example">Example: {credit_amount=500.0, customer_type=VIP, customer_name=&quot;Bob&quot;, expected_bonus_points=100, offer_id=&quot;3&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given A premium credit offer with ID <span class="step parameter">&quot;3&quot;</span> and credit amount <span class="step parameter">500.0</span></div>
+<div class="step successful">And A <span class="step parameter">VIP</span> named <span class="step parameter">&quot;Bob&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for premium offer</div>
+<div class="step successful">Then The bonus points for premium offer should be <span class="step parameter">100</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+
+<h3 class="example">Example: {credit_amount=3000.0, customer_type=usual, customer_name=&quot;Emma&quot;, expected_bonus_points=300, offer_id=&quot;4&quot;}</h3>
+<div class="beforeSystemScenarioSteps">
+</div>
+<div class="beforeUserScenarioSteps">
+</div>
+<div class="steps">
+<div class="step successful">Given A premium credit offer with ID <span class="step parameter">&quot;4&quot;</span> and credit amount <span class="step parameter">3000.0</span></div>
+<div class="step successful">And A <span class="step parameter">usual</span> named <span class="step parameter">&quot;Emma&quot;</span></div>
+<div class="step successful">When The bonus points are calculated for the customer for premium offer</div>
+<div class="step successful">Then The bonus points for premium offer should be <span class="step parameter">300</span></div>
+</div>
+<div class="afterUserScenarioSteps">
+</div>
+<div class="afterSystemScenarioSteps">
+</div>
+</div>
+<h3>start 1713180791011</h3>
+<h3>end 1713180791089</h3>
+</div>
+<div class="afterUserStorySteps">
+</div>
+<div class="afterSystemStorySteps">
+</div>
+</div>

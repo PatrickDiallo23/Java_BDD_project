@@ -1,0 +1,479 @@
+<story id="15f3756f-fc7f-4b32-96d6-e53c4d9c762b" path="tests/bank_test_story.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">manage credit offers efficiently</inOrderTo>
+  <asA keyword="As a">bank operator</asA>
+  <iWantTo keyword="I want to">perform various operations on different types of credit offers and customers
+
+!-- task 6</iWantTo>
+</narrative>
+<beforeSystemStorySteps>
+</beforeSystemStorySteps>
+<beforeUserStorySteps>
+</beforeUserStorySteps>
+<scenario id="8ac3dc16-cd04-4431-9a5f-e16f50b98875" keyword="Scenario:" title="Adding usual customer to economy offer">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given an economy credit offer with ID <parameter>&quot;1&quot;</parameter></step>
+<step outcome="successful">And a usual customer named <parameter>&quot;John&quot;</parameter></step>
+<step outcome="successful">When the usual customer is added to the economy offer</step>
+<step outcome="successful">Then the usual customer should be added successfully</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790659</timing>
+<timing phase="end">1713180790720</timing>
+</scenario>
+<scenario id="069df457-87e9-402e-8d78-c67bd5ffd53b" keyword="Scenario:" title="Removing usual customer from economy offer">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given an economy credit offer with ID <parameter>&quot;2&quot;</parameter></step>
+<step outcome="successful">And a usual customer with name <parameter>&quot;John&quot;</parameter> added to the economy offer</step>
+<step outcome="successful">When the usual customer is removed from the economy offer</step>
+<step outcome="successful">Then the usual customer should be removed successfully</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790724</timing>
+<timing phase="end">1713180790743</timing>
+</scenario>
+<scenario id="55377587-7a6e-4d89-b524-73892155c026" keyword="Scenario:" title="Adding VIP customer to economy offer">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given an economy credit offer with ID <parameter>&quot;3&quot;</parameter></step>
+<step outcome="successful">And a VIP customer named <parameter>&quot;Alice&quot;</parameter></step>
+<step outcome="successful">When the VIP customer is added to the economy offer</step>
+<step outcome="successful">Then the VIP customer should be added successfully</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790745</timing>
+<timing phase="end">1713180790760</timing>
+</scenario>
+<scenario id="4ba1de8a-b048-47a2-8bbb-65412f419128" keyword="Scenario:" title="Removing VIP customer from economy offer">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given an economy credit offer with ID <parameter>&quot;4&quot;</parameter></step>
+<step outcome="successful">And a VIP customer with name <parameter>&quot;Emma&quot;</parameter> added to the economy offer</step>
+<step outcome="successful">When the VIP customer is removed from the economy offer</step>
+<step outcome="successful">Then the VIP customer should not be removed</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790762</timing>
+<timing phase="end">1713180790774</timing>
+</scenario>
+<scenario id="656e803f-f68d-4abf-936e-58aa07c2a524" keyword="Scenario:" title="Not adding usual customer to business offer">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given a business credit offer with ID <parameter>&quot;5&quot;</parameter></step>
+<step outcome="successful">And a usual customer named <parameter>&quot;Mike&quot;</parameter></step>
+<step outcome="successful">When the usual customer is added to the business offer</step>
+<step outcome="successful">Then the usual customer should not be added</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790776</timing>
+<timing phase="end">1713180790791</timing>
+</scenario>
+<scenario id="7f5dac20-7cb0-49e0-a61b-10d9712069da" keyword="Scenario:" title="Not removing usual customer from any offer">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given a business credit offer with ID <parameter>&quot;6&quot;</parameter></step>
+<step outcome="successful">And a usual customer named <parameter>&quot;Kate&quot;</parameter></step>
+<step outcome="successful">When the usual customer is removed from any offer</step>
+<step outcome="successful">Then the usual customer should not be removed</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790792</timing>
+<timing phase="end">1713180790803</timing>
+</scenario>
+<scenario id="521a2f68-42e6-4403-b3f3-d744a648b9d0" keyword="Scenario:" title="Adding VIP customer to business offer">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given a business credit offer with ID <parameter>&quot;7&quot;</parameter></step>
+<step outcome="successful">And a VIP customer named <parameter>&quot;Tom&quot;</parameter></step>
+<step outcome="successful">When the VIP customer is added to the business offer</step>
+<step outcome="successful">Then the VIP customer should be added successfully</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790804</timing>
+<timing phase="end">1713180790813</timing>
+</scenario>
+<scenario id="2d72abe1-9490-4bba-a242-98b3b6cf85d9" keyword="Scenario:" title="Not removing VIP customer from any offer">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given a business credit offer with ID <parameter>&quot;8&quot;</parameter></step>
+<step outcome="successful">And a VIP customer named <parameter>&quot;Emma&quot;</parameter></step>
+<step outcome="successful">When the VIP customer is removed from any offer</step>
+<step outcome="successful">Then the VIP customer should not be removed</step>
+<step outcome="comment">!-- task 7</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790814</timing>
+<timing phase="end">1713180790831</timing>
+</scenario>
+<scenario id="fecc5f3a-e9d2-442d-9706-d92c0963c756" keyword="Scenario:" title="Adding usual customer to premium offer">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given a premium credit offer with ID <parameter>&quot;9&quot;</parameter></step>
+<step outcome="successful">And a usual customer named <parameter>&quot;David&quot;</parameter></step>
+<step outcome="successful">When the usual customer is added to the premium offer</step>
+<step outcome="successful">Then the usual customer should not be added</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790832</timing>
+<timing phase="end">1713180790847</timing>
+</scenario>
+<scenario id="b904b105-4125-40ac-9115-bc16098745c1" keyword="Scenario:" title="Adding VIP customer to premium offer">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given a premium credit offer with ID <parameter>&quot;10&quot;</parameter></step>
+<step outcome="successful">And a VIP customer named <parameter>&quot;Sophia&quot;</parameter></step>
+<step outcome="successful">When the VIP customer is added to the premium offer</step>
+<step outcome="successful">Then the VIP customer should be added successfully</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790848</timing>
+<timing phase="end">1713180790859</timing>
+</scenario>
+<scenario id="80850636-2ae3-4fb5-9afd-0687dab6ad37" keyword="Scenario:" title="Removing customer from premium offer">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given a premium credit offer with ID <parameter>&quot;11&quot;</parameter></step>
+<step outcome="successful">And a <parameter>customer</parameter> named <parameter>&quot;Anna&quot;</parameter> added to the premium offer</step>
+<step outcome="successful">When the customer is removed from the premium offer</step>
+<step outcome="successful">Then the customer should be removed successfully</step>
+<step outcome="comment">!-- task 8</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790860</timing>
+<timing phase="end">1713180790873</timing>
+</scenario>
+<scenario id="e2ebdd8c-0936-4cd4-9b7d-ffa04ba2d2cb" keyword="Scenario:" title="Adding the same customer to an offer again">
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given a <parameter>economy</parameter> credit offer type with ID <parameter>&quot;12&quot;</parameter></step>
+<step outcome="successful">And a customer named <parameter>Maria</parameter> added to the credit offer</step>
+<step outcome="successful">When the same customer is added to the credit offer again</step>
+<step outcome="successful">Then the customer should not be added again</step>
+<step outcome="comment">!-- task 9</step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+<timing phase="start">1713180790874</timing>
+<timing phase="end">1713180790885</timing>
+</scenario>
+<scenario id="349d5d8c-2d61-472e-b126-36833289eda2" keyword="Scenario:" title="Calculate bonus points for customers applying for an economy credit offer">
+<examples keyword="Examples:">
+<step>Given An economy credit offer with ID &lt;offer_id&gt; and credit amount &lt;credit_amount&gt;</step>
+<step>And A &lt;customer_type&gt; named &lt;customer_name&gt;</step>
+<step>When The bonus points are calculated for the customer for economy offer</step>
+<step>Then The bonus points should be &lt;expected_bonus_points&gt;</step>
+<parameters>
+<names><name>offer_id</name><name>credit_amount</name><name>customer_type</name><name>customer_name</name><name>expected_bonus_points</name></names>
+<values><value>&quot;1&quot;</value><value>1000.0</value><value>VIP</value><value>&quot;Alice&quot;</value><value>100</value></values>
+<values><value>&quot;2&quot;</value><value>2000.0</value><value>usual</value><value>&quot;John&quot;</value><value>100</value></values>
+<values><value>&quot;3&quot;</value><value>500.0</value><value>VIP</value><value>&quot;Bob&quot;</value><value>50</value></values>
+<values><value>&quot;4&quot;</value><value>3000.0</value><value>usual</value><value>&quot;Emma&quot;</value><value>150</value></values>
+</parameters>
+
+<example keyword="Example:">{credit_amount=1000.0, customer_type=VIP, customer_name=&quot;Alice&quot;, expected_bonus_points=100, offer_id=&quot;1&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given An economy credit offer with ID <parameter>&quot;1&quot;</parameter> and credit amount <parameter>1000.0</parameter></step>
+<step outcome="successful">And A <parameter>VIP</parameter> named <parameter>&quot;Alice&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for economy offer</step>
+<step outcome="successful">Then The bonus points should be <parameter>100</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+
+<example keyword="Example:">{credit_amount=2000.0, customer_type=usual, customer_name=&quot;John&quot;, expected_bonus_points=100, offer_id=&quot;2&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given An economy credit offer with ID <parameter>&quot;2&quot;</parameter> and credit amount <parameter>2000.0</parameter></step>
+<step outcome="successful">And A <parameter>usual</parameter> named <parameter>&quot;John&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for economy offer</step>
+<step outcome="successful">Then The bonus points should be <parameter>100</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+
+<example keyword="Example:">{credit_amount=500.0, customer_type=VIP, customer_name=&quot;Bob&quot;, expected_bonus_points=50, offer_id=&quot;3&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given An economy credit offer with ID <parameter>&quot;3&quot;</parameter> and credit amount <parameter>500.0</parameter></step>
+<step outcome="successful">And A <parameter>VIP</parameter> named <parameter>&quot;Bob&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for economy offer</step>
+<step outcome="successful">Then The bonus points should be <parameter>50</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+
+<example keyword="Example:">{credit_amount=3000.0, customer_type=usual, customer_name=&quot;Emma&quot;, expected_bonus_points=150, offer_id=&quot;4&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given An economy credit offer with ID <parameter>&quot;4&quot;</parameter> and credit amount <parameter>3000.0</parameter></step>
+<step outcome="successful">And A <parameter>usual</parameter> named <parameter>&quot;Emma&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for economy offer</step>
+<step outcome="successful">Then The bonus points should be <parameter>150</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+</examples>
+<timing phase="start">1713180790886</timing>
+<timing phase="end">1713180790958</timing>
+</scenario>
+<scenario id="e7bbcb52-2638-410a-8722-58062aacfd49" keyword="Scenario:" title="Calculate bonus points for customers applying for a business credit offer">
+<examples keyword="Examples:">
+<step>Given A business credit offer with ID &lt;offer_id&gt; and credit amount &lt;credit_amount&gt;</step>
+<step>And A &lt;customer_type&gt; named &lt;customer_name&gt;</step>
+<step>When The bonus points are calculated for the customer for business offer</step>
+<step>Then The bonus points for business offer should be &lt;expected_bonus_points&gt;</step>
+<parameters>
+<names><name>offer_id</name><name>credit_amount</name><name>customer_type</name><name>customer_name</name><name>expected_bonus_points</name></names>
+<values><value>&quot;1&quot;</value><value>1000.0</value><value>VIP</value><value>&quot;Alice&quot;</value><value>150</value></values>
+<values><value>&quot;2&quot;</value><value>2000.0</value><value>usual</value><value>&quot;John&quot;</value><value>140</value></values>
+<values><value>&quot;3&quot;</value><value>500.0</value><value>VIP</value><value>&quot;Bob&quot;</value><value>75</value></values>
+<values><value>&quot;4&quot;</value><value>3000.0</value><value>usual</value><value>&quot;Emma&quot;</value><value>210</value></values>
+</parameters>
+
+<example keyword="Example:">{credit_amount=1000.0, customer_type=VIP, customer_name=&quot;Alice&quot;, expected_bonus_points=150, offer_id=&quot;1&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given A business credit offer with ID <parameter>&quot;1&quot;</parameter> and credit amount <parameter>1000.0</parameter></step>
+<step outcome="successful">And A <parameter>VIP</parameter> named <parameter>&quot;Alice&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for business offer</step>
+<step outcome="successful">Then The bonus points for business offer should be <parameter>150</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+
+<example keyword="Example:">{credit_amount=2000.0, customer_type=usual, customer_name=&quot;John&quot;, expected_bonus_points=140, offer_id=&quot;2&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given A business credit offer with ID <parameter>&quot;2&quot;</parameter> and credit amount <parameter>2000.0</parameter></step>
+<step outcome="successful">And A <parameter>usual</parameter> named <parameter>&quot;John&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for business offer</step>
+<step outcome="successful">Then The bonus points for business offer should be <parameter>140</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+
+<example keyword="Example:">{credit_amount=500.0, customer_type=VIP, customer_name=&quot;Bob&quot;, expected_bonus_points=75, offer_id=&quot;3&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given A business credit offer with ID <parameter>&quot;3&quot;</parameter> and credit amount <parameter>500.0</parameter></step>
+<step outcome="successful">And A <parameter>VIP</parameter> named <parameter>&quot;Bob&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for business offer</step>
+<step outcome="successful">Then The bonus points for business offer should be <parameter>75</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+
+<example keyword="Example:">{credit_amount=3000.0, customer_type=usual, customer_name=&quot;Emma&quot;, expected_bonus_points=210, offer_id=&quot;4&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given A business credit offer with ID <parameter>&quot;4&quot;</parameter> and credit amount <parameter>3000.0</parameter></step>
+<step outcome="successful">And A <parameter>usual</parameter> named <parameter>&quot;Emma&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for business offer</step>
+<step outcome="successful">Then The bonus points for business offer should be <parameter>210</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+</examples>
+<timing phase="start">1713180790959</timing>
+<timing phase="end">1713180791010</timing>
+</scenario>
+<scenario id="c3bdd963-4c10-4d53-8f70-fde4bfb52020" keyword="Scenario:" title="Calculate bonus points for customers applying for a premium credit offer">
+<examples keyword="Examples:">
+<step>Given A premium credit offer with ID &lt;offer_id&gt; and credit amount &lt;credit_amount&gt;</step>
+<step>And A &lt;customer_type&gt; named &lt;customer_name&gt;</step>
+<step>When The bonus points are calculated for the customer for premium offer</step>
+<step>Then The bonus points for premium offer should be &lt;expected_bonus_points&gt;</step>
+<parameters>
+<names><name>offer_id</name><name>credit_amount</name><name>customer_type</name><name>customer_name</name><name>expected_bonus_points</name></names>
+<values><value>&quot;1&quot;</value><value>1000.0</value><value>VIP</value><value>&quot;Alice&quot;</value><value>200</value></values>
+<values><value>&quot;2&quot;</value><value>2000.0</value><value>usual</value><value>&quot;John&quot;</value><value>200</value></values>
+<values><value>&quot;3&quot;</value><value>500.0</value><value>VIP</value><value>&quot;Bob&quot;</value><value>100</value></values>
+<values><value>&quot;4&quot;</value><value>3000.0</value><value>usual</value><value>&quot;Emma&quot;</value><value>300</value></values>
+</parameters>
+
+<example keyword="Example:">{credit_amount=1000.0, customer_type=VIP, customer_name=&quot;Alice&quot;, expected_bonus_points=200, offer_id=&quot;1&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given A premium credit offer with ID <parameter>&quot;1&quot;</parameter> and credit amount <parameter>1000.0</parameter></step>
+<step outcome="successful">And A <parameter>VIP</parameter> named <parameter>&quot;Alice&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for premium offer</step>
+<step outcome="successful">Then The bonus points for premium offer should be <parameter>200</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+
+<example keyword="Example:">{credit_amount=2000.0, customer_type=usual, customer_name=&quot;John&quot;, expected_bonus_points=200, offer_id=&quot;2&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given A premium credit offer with ID <parameter>&quot;2&quot;</parameter> and credit amount <parameter>2000.0</parameter></step>
+<step outcome="successful">And A <parameter>usual</parameter> named <parameter>&quot;John&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for premium offer</step>
+<step outcome="successful">Then The bonus points for premium offer should be <parameter>200</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+
+<example keyword="Example:">{credit_amount=500.0, customer_type=VIP, customer_name=&quot;Bob&quot;, expected_bonus_points=100, offer_id=&quot;3&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given A premium credit offer with ID <parameter>&quot;3&quot;</parameter> and credit amount <parameter>500.0</parameter></step>
+<step outcome="successful">And A <parameter>VIP</parameter> named <parameter>&quot;Bob&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for premium offer</step>
+<step outcome="successful">Then The bonus points for premium offer should be <parameter>100</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+
+<example keyword="Example:">{credit_amount=3000.0, customer_type=usual, customer_name=&quot;Emma&quot;, expected_bonus_points=300, offer_id=&quot;4&quot;}</example>
+<beforeSystemScenarioSteps>
+</beforeSystemScenarioSteps>
+<beforeUserScenarioSteps>
+</beforeUserScenarioSteps>
+<steps>
+<step outcome="successful">Given A premium credit offer with ID <parameter>&quot;4&quot;</parameter> and credit amount <parameter>3000.0</parameter></step>
+<step outcome="successful">And A <parameter>usual</parameter> named <parameter>&quot;Emma&quot;</parameter></step>
+<step outcome="successful">When The bonus points are calculated for the customer for premium offer</step>
+<step outcome="successful">Then The bonus points for premium offer should be <parameter>300</parameter></step>
+</steps>
+<afterUserScenarioSteps>
+</afterUserScenarioSteps>
+<afterSystemScenarioSteps>
+</afterSystemScenarioSteps>
+</examples>
+<timing phase="start">1713180791011</timing>
+<timing phase="end">1713180791089</timing>
+</scenario>
+<afterUserStorySteps>
+</afterUserStorySteps>
+<afterSystemStorySteps>
+</afterSystemStorySteps>
+</story>

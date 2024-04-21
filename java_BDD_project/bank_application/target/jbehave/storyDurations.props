@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Mon Apr 15 14:33:11 EEST 2024
+tests/bank_test_story.story=0
+total=0
+threadAverage=0
+threads=1

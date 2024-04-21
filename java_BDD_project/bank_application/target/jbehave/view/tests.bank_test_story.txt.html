@@ -1,0 +1,433 @@
+<html>
+<head>
+<title>tests.bank_test_story</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(tests/bank_test_story.story)
+Narrative:
+In order to manage credit offers efficiently
+As a bank operator
+I want to perform various operations on different types of credit offers and customers
+
+!-- task 6
+BeforeSystemStorySteps
+
+BeforeUserStorySteps
+
+Scenario: Adding usual customer to economy offer
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given an economy credit offer with ID "1"
+And a usual customer named "John"
+When the usual customer is added to the economy offer
+Then the usual customer should be added successfully
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Removing usual customer from economy offer
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given an economy credit offer with ID "2"
+And a usual customer with name "John" added to the economy offer
+When the usual customer is removed from the economy offer
+Then the usual customer should be removed successfully
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Adding VIP customer to economy offer
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given an economy credit offer with ID "3"
+And a VIP customer named "Alice"
+When the VIP customer is added to the economy offer
+Then the VIP customer should be added successfully
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Removing VIP customer from economy offer
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given an economy credit offer with ID "4"
+And a VIP customer with name "Emma" added to the economy offer
+When the VIP customer is removed from the economy offer
+Then the VIP customer should not be removed
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Not adding usual customer to business offer
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given a business credit offer with ID "5"
+And a usual customer named "Mike"
+When the usual customer is added to the business offer
+Then the usual customer should not be added
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Not removing usual customer from any offer
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given a business credit offer with ID "6"
+And a usual customer named "Kate"
+When the usual customer is removed from any offer
+Then the usual customer should not be removed
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Adding VIP customer to business offer
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given a business credit offer with ID "7"
+And a VIP customer named "Tom"
+When the VIP customer is added to the business offer
+Then the VIP customer should be added successfully
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Not removing VIP customer from any offer
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given a business credit offer with ID "8"
+And a VIP customer named "Emma"
+When the VIP customer is removed from any offer
+Then the VIP customer should not be removed
+!-- task 7
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Adding usual customer to premium offer
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given a premium credit offer with ID "9"
+And a usual customer named "David"
+When the usual customer is added to the premium offer
+Then the usual customer should not be added
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Adding VIP customer to premium offer
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given a premium credit offer with ID "10"
+And a VIP customer named "Sophia"
+When the VIP customer is added to the premium offer
+Then the VIP customer should be added successfully
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Removing customer from premium offer
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given a premium credit offer with ID "11"
+And a customer named "Anna" added to the premium offer
+When the customer is removed from the premium offer
+Then the customer should be removed successfully
+!-- task 8
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Adding the same customer to an offer again
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given a economy credit offer type with ID "12"
+And a customer named Maria added to the credit offer
+When the same customer is added to the credit offer again
+Then the customer should not be added again
+!-- task 9
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Scenario: Calculate bonus points for customers applying for an economy credit offer
+Examples:
+Given An economy credit offer with ID <offer_id> and credit amount <credit_amount>
+And A <customer_type> named <customer_name>
+When The bonus points are calculated for the customer for economy offer
+Then The bonus points should be <expected_bonus_points>
+
+|offer_id|credit_amount|customer_type|customer_name|expected_bonus_points|
+|"1"|1000.0|VIP|"Alice"|100|
+|"2"|2000.0|usual|"John"|100|
+|"3"|500.0|VIP|"Bob"|50|
+|"4"|3000.0|usual|"Emma"|150|
+
+Example: {credit_amount=1000.0, customer_type=VIP, customer_name="Alice", expected_bonus_points=100, offer_id="1"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given An economy credit offer with ID "1" and credit amount 1000.0
+And A VIP named "Alice"
+When The bonus points are calculated for the customer for economy offer
+Then The bonus points should be 100
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Example: {credit_amount=2000.0, customer_type=usual, customer_name="John", expected_bonus_points=100, offer_id="2"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given An economy credit offer with ID "2" and credit amount 2000.0
+And A usual named "John"
+When The bonus points are calculated for the customer for economy offer
+Then The bonus points should be 100
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Example: {credit_amount=500.0, customer_type=VIP, customer_name="Bob", expected_bonus_points=50, offer_id="3"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given An economy credit offer with ID "3" and credit amount 500.0
+And A VIP named "Bob"
+When The bonus points are calculated for the customer for economy offer
+Then The bonus points should be 50
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Example: {credit_amount=3000.0, customer_type=usual, customer_name="Emma", expected_bonus_points=150, offer_id="4"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given An economy credit offer with ID "4" and credit amount 3000.0
+And A usual named "Emma"
+When The bonus points are calculated for the customer for economy offer
+Then The bonus points should be 150
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+
+Scenario: Calculate bonus points for customers applying for a business credit offer
+Examples:
+Given A business credit offer with ID <offer_id> and credit amount <credit_amount>
+And A <customer_type> named <customer_name>
+When The bonus points are calculated for the customer for business offer
+Then The bonus points for business offer should be <expected_bonus_points>
+
+|offer_id|credit_amount|customer_type|customer_name|expected_bonus_points|
+|"1"|1000.0|VIP|"Alice"|150|
+|"2"|2000.0|usual|"John"|140|
+|"3"|500.0|VIP|"Bob"|75|
+|"4"|3000.0|usual|"Emma"|210|
+
+Example: {credit_amount=1000.0, customer_type=VIP, customer_name="Alice", expected_bonus_points=150, offer_id="1"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given A business credit offer with ID "1" and credit amount 1000.0
+And A VIP named "Alice"
+When The bonus points are calculated for the customer for business offer
+Then The bonus points for business offer should be 150
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Example: {credit_amount=2000.0, customer_type=usual, customer_name="John", expected_bonus_points=140, offer_id="2"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given A business credit offer with ID "2" and credit amount 2000.0
+And A usual named "John"
+When The bonus points are calculated for the customer for business offer
+Then The bonus points for business offer should be 140
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Example: {credit_amount=500.0, customer_type=VIP, customer_name="Bob", expected_bonus_points=75, offer_id="3"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given A business credit offer with ID "3" and credit amount 500.0
+And A VIP named "Bob"
+When The bonus points are calculated for the customer for business offer
+Then The bonus points for business offer should be 75
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Example: {credit_amount=3000.0, customer_type=usual, customer_name="Emma", expected_bonus_points=210, offer_id="4"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given A business credit offer with ID "4" and credit amount 3000.0
+And A usual named "Emma"
+When The bonus points are calculated for the customer for business offer
+Then The bonus points for business offer should be 210
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+
+Scenario: Calculate bonus points for customers applying for a premium credit offer
+Examples:
+Given A premium credit offer with ID <offer_id> and credit amount <credit_amount>
+And A <customer_type> named <customer_name>
+When The bonus points are calculated for the customer for premium offer
+Then The bonus points for premium offer should be <expected_bonus_points>
+
+|offer_id|credit_amount|customer_type|customer_name|expected_bonus_points|
+|"1"|1000.0|VIP|"Alice"|200|
+|"2"|2000.0|usual|"John"|200|
+|"3"|500.0|VIP|"Bob"|100|
+|"4"|3000.0|usual|"Emma"|300|
+
+Example: {credit_amount=1000.0, customer_type=VIP, customer_name="Alice", expected_bonus_points=200, offer_id="1"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given A premium credit offer with ID "1" and credit amount 1000.0
+And A VIP named "Alice"
+When The bonus points are calculated for the customer for premium offer
+Then The bonus points for premium offer should be 200
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Example: {credit_amount=2000.0, customer_type=usual, customer_name="John", expected_bonus_points=200, offer_id="2"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given A premium credit offer with ID "2" and credit amount 2000.0
+And A usual named "John"
+When The bonus points are calculated for the customer for premium offer
+Then The bonus points for premium offer should be 200
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Example: {credit_amount=500.0, customer_type=VIP, customer_name="Bob", expected_bonus_points=100, offer_id="3"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given A premium credit offer with ID "3" and credit amount 500.0
+And A VIP named "Bob"
+When The bonus points are calculated for the customer for premium offer
+Then The bonus points for premium offer should be 100
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+Example: {credit_amount=3000.0, customer_type=usual, customer_name="Emma", expected_bonus_points=300, offer_id="4"}
+BeforeSystemScenarioSteps
+
+BeforeUserScenarioSteps
+
+Given A premium credit offer with ID "4" and credit amount 3000.0
+And A usual named "Emma"
+When The bonus points are calculated for the customer for premium offer
+Then The bonus points for premium offer should be 300
+AfterUserScenarioSteps
+
+AfterSystemScenarioSteps
+
+
+
+AfterUserStorySteps
+
+AfterSystemStorySteps
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
